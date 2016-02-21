@@ -5,6 +5,6 @@ Typically you should have create, push, pop and isEmpty methods.
 
 ## Development
 
- - Install Python (3.5.1)
+ - Install Python (3.5.0)
  - Install tox, `pip install tox`
  - Run the tests, `tox`
