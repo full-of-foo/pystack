@@ -1,2 +1,2 @@
 class EmptyStackError(Exception):
-    """TODO - message"""
+    """Error occurred performing an action on an empty stack"""

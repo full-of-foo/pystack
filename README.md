@@ -8,3 +8,8 @@ Typically you should have create, push, pop and isEmpty methods.
  - Install Python (3.5.0)
  - Install tox, `pip install tox`
  - Run the tests, `tox`
+ - Listing test coverage, `tox -e coverage`
+
+## CI
+
+ - CircleCi: https://circleci.com/gh/full-of-foo/pystack

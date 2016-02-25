@@ -9,3 +9,11 @@ dependencies:
 test:
   override:
     - tox -e circle
+
+## in production environment one would deploy a passing build to a pypi server
+# deployment:
+#   production:
+#     branch: master
+#     commands:
+#       - python setup.py register -r pypi
+#       - python setup.py sdist upload -r pypi
