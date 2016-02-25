@@ -1,0 +1,15 @@
+~/dev/pystack > $ tox -e coverage
+GLOB sdist-make: ~/dev/pystack/setup.py
+coverage create: ~/dev/pystack/.tox/coverage
+...
+coverage runtests: commands[0] | ~/dev/pystack/.tox/coverage/bin/coverage erase
+coverage runtests: commands[1] | ~/dev/pystack/.tox/coverage/bin/coverage run -m unittest
+coverage runtests: commands[2] | ~/dev/pystack/.tox/coverage/bin/coverage combine
+coverage runtests: commands[3] | ~/dev/pystack/.tox/coverage/bin/coverage report -m --omit=tests/*
+Name                  Stmts   Miss  Cover   Missing
+---------------------------------------------------
+pystack/__init__.py       0      0   100%
+pystack/exc.py            1      0   100%
+pystack/stack.py         22      0   100%
+---------------------------------------------------
+TOTAL                    23      0   100%

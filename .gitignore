@@ -61,3 +61,7 @@ target/
 
 .idea/
 .DS_Store
+
+report/report.aux
+report/report.synctex.gz
+report/report.out
